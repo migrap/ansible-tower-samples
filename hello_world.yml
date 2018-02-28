@@ -1,7 +1,6 @@
-- name: Test Reachability of Routers
+- name: Hello World Sample
   hosts: all
   tasks:
+    - name: Hello Message
       debug:
-        msg: "Test reachability to sandbox-pknpddwdrc.dynamic-m.com"
-      net_ping:
-        dest: sandbox-pknpddwdrc.dynamic-m.com
+        msg: "Hello World!"
