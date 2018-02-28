@@ -1,7 +1,4 @@
-- name: Hello World Sample
-  hosts: all
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
-
+- name: Ping all Hosts
+  net_ping:
+    provider: "{{ provider }}"
+    dest: "sandbox-pknpddwdrc.dynamic-m.com"
