@@ -4,3 +4,9 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+  tasks:
+    - name: Get EdgeOS Version
+      commands:
+        - show version
+      wait_for
+        - "result[0] contains 'EdgeOS'"
