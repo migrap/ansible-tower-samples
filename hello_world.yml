@@ -1,7 +1,6 @@
 - name: Test Reachability of Routers
   hosts: all
   tasks:
-    - name: Test reachability to sandbox-pknpddwdrc.dynamic-m.com
       debug:
         msg: "Test reachability to sandbox-pknpddwdrc.dynamic-m.com"
       net_ping:
