@@ -1,7 +1,7 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    - name: Get EdgeOS Version
+    - name: Hello Message
       commands:
         - show version
       wait_for:
