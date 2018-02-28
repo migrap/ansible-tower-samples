@@ -1,4 +1,3 @@
-- name: Ping all Hosts
+- name: Test reachability to sandbox-pknpddwdrc.dynamic-m.com
   net_ping:
-    provider: "{{ provider }}"
-    dest: "sandbox-pknpddwdrc.dynamic-m.com"
+    dest: sandbox-pknpddwdrc.dynamic-m.com
