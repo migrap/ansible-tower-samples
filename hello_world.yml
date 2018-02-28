@@ -1,8 +1,6 @@
 - name: Hello World Sample
-  hosts: all
   tasks:
-    - name: Hello Message
-      commands:
-        - show version
-      wait_for:
-        - "result[0] contains 'EdgeOS'"
+    - name: Version
+      edgeos_command
+        commands:
+          - show version
